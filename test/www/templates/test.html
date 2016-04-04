@@ -1,0 +1,29 @@
+<ion-view view-title="Test">
+  <ion-content>
+    <h1>Test</h1>
+      <ion-list ng-controller="testCtrl"
+                can-swipe="listCanSwipe">
+      <ion-item ng-repeat="a in myList"
+                class="item-thumbnail-left">
+        <img ng-src="{{a.img}}">
+        <h2>{{a.id}}</h2>
+        <p>{{a.item}}</p>
+      </ion-item>
+    </ion-list>
+    <ion-tabs class="tabs-positive tabs-icon-top">
+        <ion-tab title="Home" icon-on="ion-ios-filing" 
+            icon-off="ion-ios-filing-outline">
+        </ion-tab>
+        
+        <ion-tab title="About" icon-on="ion-ios-clock" 
+            icon-off="ion-ios-clock-outline"
+            href="www/templates/browse.html">
+        </ion-tab>
+        
+        <ion-tab title="Settings" icon-on="ion-ios-gear" 
+            icon-off="ion-ios-gear-outline"
+            href="www/templates/search.html">
+        </ion-tab>
+    </ion-tabs>
+  </ion-content>
+</ion-view>
